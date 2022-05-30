@@ -76,12 +76,14 @@ main h2 {
     margin-top: 10px;
 }
 aside {
-    grid-area: aside;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 footer {
-grid-area: footer;
-display: flex;
+    grid-area: footer;
+    display: flex;
 }
 
 nav {
@@ -131,18 +133,14 @@ body header nav ul li a:hover,
     border-bottom: 2px solid #00c291;
 }
 
-aside {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
 .profilepic {
     border-radius: 10px;
     box-shadow: 10px -10px #00c291;
     height: 480px;
     width: auto;
     margin-left: 50px;
+    transform: translate(30px, 0px);
+
 }
 
 footer {
@@ -179,44 +177,56 @@ footer ul li a {
     height: 30px;
 }
 
-
-.education-aside {
-    display: inline-block;
+ul {
+    list-style: none;
 }
 
+.education-aside {
+    list-style: none;
+    display: flex;
+    margin: 10px;
+    flex-direction: column;
+}
 
 .timeline{
     font-family:FuturaBoldBT,sans-serif;
     font-size: 30px;
-    padding: 10px;
 }
 
-.cuadro_education {
+.container-description-education {
     background-color: hsl(100, 100%, 99%);
     color: #2E2F2F;
     font-family:FutuMd;
-    font-size: 30px;
-    max-width: 300px;
-    max-height: 30px;
+    height: fit-content;
+    width:90%;
     padding: 15px;
-    border-radius: 7px;
+    border-radius: 5px;
     box-shadow: -5px -5px #00c291;
     margin-left: 5px;
-    margin-top: 10px;   
-    margin-bottom: 20px;
-    justify-content: center;
-    align-items: flex-start;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
 
+.education-dates{
+    padding: 10px;
+    font-size: 3rem;
+    font-family: FuturistFixed-widthBoldItalic, sans-serif;  
+}
+
+.education-description{
+    font-size: 1rem;
+    font-family: FuturistFixed-widthBoldItalic, sans-serif;  
 }
 
 .cuadro_title {
     font-size: 10px;
-    font-family: FuturistFixed-widthBoldItalic, sans-serif;
-    
+    font-family: FuturistFixed-widthBoldItalic, sans-serif;    
 }
 
 .education_dates {
-    font-size: 40px;
+    font-size: x-large;
     font-family: FuturistFixed-widthBoldItalic, sans-serif;
     display: inline;
     align-items: center;
@@ -226,66 +236,58 @@ footer ul li a {
     display: none;
 }
 
-.skills_elements {
-    margin-top: 0px;
+.skills-aside{
+    display: flex;
+    flex-direction: column;
+    column-gap: 1rem;
 }
 
-.right_elements_skills {
-    list-style: none;
-}
 
-.cuadro_skills {
+.container-description-skills {
     background-color: hsl(100, 100%, 99%);
     color: #2E2F2F;
     font-family:FutuMd;
     font-size: 30px;
-    max-width: 300px;
-    max-height: 30px;
+    width: 50%;
     padding: 15px;
+    margin: 10px;
     border-radius: 7px;
     box-shadow: -5px -5px #00c291;
-    margin-left: 5px;
-    margin-top: 10px;   
-    margin-bottom: 20px;
+    margin: 10px;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
 } 
 
 .skills_info{
-    font-size: 15px;
+    font-size: 1rem;
     font-family: FuturistFixed-widthBoldItalic, sans-serif;
-    padding: 5px;   
+    padding: 5px;  
+    justify-content: center; 
 }
 
-.right_elements_designs{
-    right: 100px;
-    top: 100px;
+.design-aside{
     list-style: none;
+    display: flex;
+    margin: 10px;
+    flex-direction: column;
 }
 
-.cuadro_design {
-    background-color: hsl(100, 100%, 99%);
-    color: #2E2F2F;
-    font-family:FutuMd;
-    font-size: 30px;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: -5px -5px #00c291;
-    margin-left: 5px;
-    margin-top: 330px;   
-    margin-right: 560px;
-}
-
-.project_1{
-    display: block;
+.project-image-1{
     right: 100px;
     top: 0;
-    width: 700px;
-    height: 370px;
+    width: 80%;
+    height: auto;
     border-radius: 5px;
     box-shadow: -7px -7px #00c291;
-    margin-left: 5px;
-    margin-top: 30px;   
+}
+
+.project{
+    margin-top: 20px;
+    display: flex;
+    flex-flow: row;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
 }
 
 .project_title{
@@ -296,21 +298,25 @@ footer ul li a {
     padding: 10px;
     border-radius: 5px;
     box-shadow: -5px -5px #00c291;
-    margin-left: 5px;
-    margin-top: 330px;   
-    margin-right: 560px;
     height: fit-content;
     width: fit-content;
+}
+
+.project-description {
+    flex-flow: column;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .project_info {
     font-size: 15px;
     font-family: FuturistFixed-widthBoldItalic, sans-serif; 
-    margin: 10px;
-    margin-left: 5px;
-    margin-top: 10px; 
-    left: 150px;
-    bottom: 60px;
+}
+
+.project-date {
+    font-size: 30px;
+    font-family: FuturistFixed-widthBoldItalic, sans-serif; 
 }
 
 .block_subtitle {
@@ -388,20 +394,12 @@ footer ul li a {
     }
 
     aside {
-        align-self: center;
-        margin-top: 10px;
-
+        align-items: center;
     }
 
     .profilepic {
         height: auto;
         width: 200px;
-    }
-
-    aside {
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 
     footer h3 {
@@ -454,22 +452,13 @@ footer ul li a {
         height: fit-content;
         font-size: small;
     }
-
     aside {
-        align-self: right;
-        margin-top: 10px;
-
+        align-items: center;
     }
 
     .profilepic {
         height: auto;
         width: 50%;
-    }
-
-    aside {
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 
     footer h3 {
