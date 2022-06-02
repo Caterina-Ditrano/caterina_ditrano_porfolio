@@ -19,6 +19,11 @@
 }
 
 
+.background-color {
+    background-color: #2E2F2F;
+    color: #FDFFFC;
+}
+
 body{
     background-color: #2E2F2F;
     color: #FDFFFC;
@@ -86,31 +91,32 @@ footer {
     display: flex;
 }
 
+#nav {
+    margin-bottom: 3rem;
+    justify-content: flex-end;
+}
+
 nav {
-    display: inline-flex;
+    display: flex;
     width: 100%;
     justify-content: flex-end;
+    align-items: flex-end;
 }
 
 .nav-logo {
     list-style: none;
     text-align: left;
-    padding: 10px;
     font-family: FuturistFixed-widthBoldItalic, sans-serif;
     font-size: 15px;
     justify-content: flex-start;
-    margin: 20px ;
     width: fit-content;
 }
 
 body header nav ul {
     list-style: none;
     text-align: right;
-    padding: 10px;
     font-family: FuturistFixed-widthBoldItalic, sans-serif;
     font-size: 15px;
-    margin: 20px ;
-    margin-right: 50px;
     position: relative;
     justify-content: end;
 }
@@ -350,11 +356,24 @@ ul {
     left: 0px;
 }
 
-#button {
-    height: fit-content;
-    width: fit-content;
-    padding: 10px;
+#form-style{
+    box-shadow: -5px -5px #00c291; 
+    font-family:FuturaBoldBT,sans-serif;
+    color: #676767;
+    padding-bottom: 2em;
+    margin: 1rem;
+
+
 }
+
+#form-button{
+    box-shadow: -5px -5px #00c291; 
+    font-family:FuturaBoldBT,sans-serif;
+    color: #676767;
+    background-color: #FDFFFC;
+    margin: 1rem;
+}
+
 
 @media screen and (max-width: 320px) {
     body{
