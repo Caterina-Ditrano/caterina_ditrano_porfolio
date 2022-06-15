@@ -1,0 +1,51 @@
+
+.education-aside {
+    list-style: none;
+    display: flex;
+    margin: 10px;
+    flex-direction: column;
+}
+
+.timeline{
+    font-family:FuturaBoldBT,sans-serif;
+    font-size: 30px;
+}
+
+.container-description-education {
+    background-color: hsl(100, 100%, 99%);
+    color: #2E2F2F;
+    font-family:FutuMd;
+    height: fit-content;
+    width:90%;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: -5px -5px #00c291;
+    margin-left: 5px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.education-dates{
+    padding: 10px;
+    font-size: 3rem;
+    font-family: FuturistFixed-widthBoldItalic, sans-serif;  
+}
+
+.education-description{
+    font-size: 1rem;
+    font-family: FuturistFixed-widthBoldItalic, sans-serif;  
+}
+
+.cuadro_title {
+    font-size: 10px;
+    font-family: FuturistFixed-widthBoldItalic, sans-serif;    
+}
+
+.education_dates {
+    font-size: x-large;
+    font-family: FuturistFixed-widthBoldItalic, sans-serif;
+    display: inline;
+    align-items: center;
+}

@@ -1,0 +1,33 @@
+
+footer {
+    grid-area: footer;
+    text-align: center;   
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    h3 {
+        font-family: FuturistFixed-widthBoldItalic, sans-serif;
+        font-size: 15px;
+    }
+    ul {
+        list-style: none;
+        display: flex;
+        align-items: baseline;
+        flex-direction: row;
+    }
+    li {
+        font-size: larger;
+        align-items: center;
+        display: inline-flex;
+    }
+    a {
+        display: flex;
+    }  
+    .icono {
+        img{
+            width: 30px;
+            height: 30px;
+        }
+    }
+    
+}
