@@ -22,11 +22,12 @@ main {
     justify-content: left;
     align-items: baseline;
     h1 {
-        font: $title-font;
+        // font: $title-font;
+        font: map-get($headings, h1),sans-serif;
         color: $white;
     }
     h2 {
-        font: $subtitle-css;
+        font: map-get($headings, h2),sans-serif;
         color: $white;
     }
     .subtitle {

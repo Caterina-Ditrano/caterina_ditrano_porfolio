@@ -1,10 +1,15 @@
 // * Variables */
 
-$title-font: normal 30px FuturaBoldBT,sans-serif;
+// $title-font: normal 30px FuturaBoldBT,sans-serif;
 $white: #FDFFFC;
 $dark-grey: #2E2F2F;
 
-$subtitle-css:  normal 90px FuturaBoldBT,sans-serif;
+// $subtitle-css:  normal 90px FuturaBoldBT,sans-serif;
 
 
 /* SCSS*/
+
+$headings: (
+    h1: normal 30px FuturaBoldBT,
+    h2: normal 90px FuturaBoldBT,
+)
