@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Katerina Ditrano - Design</title>
         <meta name="description" content="I´m a creative publicist from Argentina. Know my work in augmented reality, advertising and graphic design.">
-		<link rel="stylesheet" href="../css/index.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">	
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet" href="../css/index.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">	
         <meta name="keywords"  content="Design, Photoshop, Publicist, AR, Professional, Argentina">
     </head>
     <body class="background-color">
@@ -42,16 +42,32 @@
             <h3  class="subtitle">Design</h3>
         </main>
         <aside class="design-aside" class="animate__animated animate__slideInDown">
-            <div class="animate__animated animate__slideInDown">
-                <img class="project-image-1"  src="../imagenes/project_1.png" alt="Project 1">
-                <div class="project">
-                        <h4 class="project_title">Project 1</h4>
-                        <section class="project-description">
-                            <p class="project-date">2020</p>
-                            <p class="project_info">PROJECT TITLE </p>
-                        </section>
-                </div>
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../imagenes/project_1.png"  class="d-block w-100" alt="..."> 
+              </div>
+              <div class="carousel-item">
+                <img src="../imagenes/project_1.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../imagenes/project_1.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </aside>
         <footer class="animate__animated animate__fadeInUp">
             <h3>FOLLOW MY WORK ON</h3>

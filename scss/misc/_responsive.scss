@@ -14,16 +14,16 @@
         main{
             justify-content: center;
         }
-    
-        main h2 {
-            font-size: 50px;
-        }
+    }
+    h2 {
+        font-size: 50px;
     }
     header {
         justify-content: center;
         font-size: smaller;
         nav{
             font-size: 10px;
+            width: 100%;
         }
     }
     .container-description {
@@ -31,18 +31,19 @@
         height: fit-content;
         font-size: small;
     }
-
+    
     aside {
         align-items: center;
+        .profilepic {
+            height: 200px;
+            width: auto;
+        }
     }
 
-    .profilepic {
-        height: auto;
-        width: 200px;
-    }
-
-    footer h3 {
-    font-size: 10px;
+    footer {
+        h3 {
+            font-size: 10px;
+        }
     }
 
     .block_subtitle {
@@ -72,40 +73,38 @@
     header {
         justify-content: center;
         font-size: smaller;
-    }
-
-    header nav{
-        font-size: 10px;
+        nav {
+            font-size: 10px;
+        }
     }
 
     main{
         justify-content: center;
+        h2 {
+            font-size: 50px;
+        }
+        .container-description {
+            width: fit-content;
+            height: fit-content;
+            font-size: small;
+        }
+        .block_subtitle {
+            font-size: 30px;
+        }    
     }
 
-    main h2 {
-        font-size: 50px;
-    }
-
-    .container-description {
-       width: fit-content;
-        height: fit-content;
-        font-size: small;
-    }
     aside {
         align-items: center;
+        .profilepic {
+            height: auto;
+            width: 50%;
+        }
     }
 
-    .profilepic {
-        height: auto;
-        width: 50%;
-    }
-
-    footer h3 {
-    font-size: 10px;
-    }
-
-    .block_subtitle {
-        font-size: 30px;
+    footer {
+        h3 {
+            font-size: 10px;
+        }
     }
 
     .input {
